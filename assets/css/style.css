@@ -1,4 +1,4 @@
-/* Variables y Reset */
+/* Variables */
 :root {
     --primary-color: #08b464a9; 
     --secondary-color: #2b743b; 
@@ -81,13 +81,20 @@ nav {
     color: var(--white);
 }
 
-
-
+/* Profile image */
+.profile-image {
+    display: block; /* Hace que la imagen se comporte como un bloque para centrarla */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    max-width: 150px; /* Limita el ancho máximo de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 70%; /* Hace que la imagen sea circular (opcional) */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra para un mejor diseño */
+}
 /* Sections */
 .section {
     background-color: var(--white);
     padding: 2rem;
-    border-radius: 8px;
+    border-radius: 4px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     margin-bottom: 2rem;
     border-left: 4px solid var(--accent-color);
@@ -99,6 +106,26 @@ nav {
     padding-bottom: 0.5rem;
     border-bottom: 2px solid var(--accent-color);
     font-weight: 300;
+}
+
+/* Habilidades */
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; 
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* Certifications */
